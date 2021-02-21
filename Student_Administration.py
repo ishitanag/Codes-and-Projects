@@ -16,13 +16,15 @@ if __name__ == '__main__':
         student_info_list = student_info.split(' ')#splitting the student info with blank set as the delimiter 
         print ("The entered information is: \nName: {}\nAge: {}\nContact Number: {}\nEmail-ID: {}".format(student_info_list[0], student_info_list[1], student_info_list[2], student_info_list[3]))
         choice_check = input ("Is the entered student information correct? (yes/no): ")
+        
         if choice_check=='yes':
             write_into_csv(student_info_list) #function call to update the csv file with the new information
             condition_check = input ("Enter (yes/no) if you want to enter information for another student: ")
+            
             if condition_check == 'yes':
                 condition = True
                 num = num+1
             else:
                 condition = False
         else:
-            print ("Please re-enter the values!")
+            print ("Please enter the student information correctly!")
