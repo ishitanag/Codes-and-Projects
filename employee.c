@@ -34,14 +34,10 @@ main()
 		
 		//printing employee information
 		printf("\nEmployees Information\n");
+		printf(" Name \tAge \tEmployee ID \tEmployee Dept. \tEmployee Salary \tEmployee Contact No.");
 		for(i=0;i<n;i++)
 		{
-		printf("\nPerson %d\nEmployee Name : %s",i+1,employee[i].name);
-		printf("\nEmployee Age : %d",employee[i].age);
-		printf("\nEmployee Id : %d",employee[i].emp_id);
-		printf("\nEmployee Id : %s",employee[i].dept);
-		printf("\nEmployee Salary : %d",employee[i].salary);
-		printf("\nEmployee Id : %d",employee[i].contact);
+			printf("\n%s \t%d \t%d \t%s \t%d \t%d",employee[i].name, employee[i].age, employee[i].emp_id, employee[i].dept, employee[i].salary, employee[i].contact);
 		}
 
 }
